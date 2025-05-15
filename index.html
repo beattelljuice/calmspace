@@ -1,35 +1,40 @@
+<!-- base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your App</title>
+  <title>My App</title>
   <link rel="stylesheet" href="base.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Page Header -->
-    <header>
+  <div class="app-shell">
+    <header class="app-header">
       <h1>Calmspace</h1>
     </header>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Replace this with your screen-specific content -->
-      <div class="card">
-        <p>Welcome to Calmspace</p>
-        <a href="/home" class="btn">Get Started</a>
-        <label>
-            <input type="checkbox" name="agree" />
-            I agree to the terms
-          </label>
+    <main class="app-main">
+
+        <div class="card">
+            <h2>Welcome to Calmspace</h2>
+            <p>Please agree to the Ts&Cs to Continue.</p>
+        </div>
           
-      </div>
+          
+        <div class="card"><a href="home" class="button">Get Started</a></div>
+        <div class="card"><label><input type="checkbox" name="agree" />I agree to the terms</label></div>
+        <div class="card"><label for="volume">Volume</label><input type="range" id="volume" class="slider" min="0" max="100" /></div>
+
+        
+          
+        
     </main>
 
-    <!-- Footer / Nav (optional) -->
-    <footer>
-      <p style="text-align: center; font-size: 0.875rem;">&copy; 2025 Your Name</p>
+    <footer class="app-footer">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Settings</a>
+      </nav>
     </footer>
   </div>
 </body>
