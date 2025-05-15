@@ -166,3 +166,24 @@
 #colorValue {
   font-weight: bold;
 }
+
+.slider-container {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slider-wrapper input[type="range"] {
+  flex: 1;
+}
+
+.slider-label {
+  width: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
