@@ -15,10 +15,24 @@
 
     <main class="app-main">
 
-        <div class="card">
-            <h2>Consider Configuring</h2>
-            <p>Click a menu option to continue</p>
-        </div>
+          <div class="card">
+              <h2>Configure Lighting</h2>
+              <div class="card">
+                <div class="color-picker">
+                  <label for="colorInput">Pick a color:</label>
+                  <input type="color" id="colorInput" value="#ff6600" />
+                  <span id="colorValue">#ff6600</span>
+                </div>
+              </div>
+              <div class="card">
+                <label for="volume">Brightness & Intensity</label>
+<input type="range" id="volume" class="slider" min="0" max="100" />
+              </div>
+              <div class="card">
+                <a href="home.html" class="button">Activate</a>
+              </div>
+
+          </div>
     </main>
 
     <footer class="app-footer">
