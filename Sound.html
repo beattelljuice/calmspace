@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My App</title>
   <link rel="stylesheet" href="base.css" />
+  <style>
+    .page { display: none; }
+    .page:not([hidden]) { display: block; }
+  </style>
 </head>
 <body>
   <div class="app-shell">
@@ -14,11 +18,43 @@
     </header>
 
     <main class="app-main">
-
         <div class="card">
-            <h2>Consider Configuring</h2>
-            <p>Click a menu option to continue</p>
+            <div class="dropdown">
+              <h2>Select a Sound</h2>
+              <br>
+                <button class="dropdown-toggle">Select Sound ▾</button>
+                <ul class="dropdown-menu">
+                  <li><a href="#1">Waterfall</a></li>
+                  <li><a href="#2" >Low-Fi-1</a></li>
+                  <li><a href="#3">Low-Fi-2</a></li>
+                </ul>
+                
+                
+              </div>
+              
+              
         </div>
+        <section id="1" class="page">
+            <div class="card">
+                <h2>Waterfall</h2><br>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/sa2JCQ1Dils?si=61M1clda-_N3Rag3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a class="button">Activate</a>
+            </div>
+          </section>
+          <section id="2"  class="page">
+            <div class="card">
+              <h2>Low-Fi-1</h2><br>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/sF80I-TQiW0?si=vSPYmRKoAHS8Klk1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <a class="button">Activate</a>
+          </div>
+          </section>
+          <section id="3"  class="page">
+            <div class="card">
+              <h2>Low-Fi-2</h2><br>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/NJuSStkIZBg?si=sHE8GsT2h2MwBhvO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <a class="button">Activate</a>
+          </div>
+          </section>
     </main>
 
     <footer class="app-footer">
@@ -28,6 +64,7 @@
         <a href="#">Settings</a>
       </nav> -->
     </footer>
+    <script src="router.js"></script>
     <script src="base.js"></script>
   </div>
 </body>
