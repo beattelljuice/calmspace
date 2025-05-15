@@ -1,0 +1,49 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My App</title>
+  <link rel="stylesheet" href="base.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <h1>Calmspace</h1>
+    </header>
+
+    <main class="app-main">
+        <div class="card">
+            <div class="dropdown">
+                <button class="dropdown-toggle">Select Preset ▾</button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Default: Winter</a></li>
+                  <li><a href="#">Default: Summer</a></li>
+                  <li><a href="#">Default: Cosy</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="card">
+            <h2>Consider Configuring</h2>
+            <p>Click a menu option to continue</p>
+            <a href="Lighting.html" class="button">Lighting</a>
+            <a href="Sound.html" class="button">Sound</a>
+            <a href="Temperature.html" class="button">Temperature</a>
+            <a href="Scent.html" class="button">Scent</a>
+            <a href="Preset.html" class="button">Set A Preset</a>
+
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>© 2025 Calmspace</p>
+      <!-- <nav>
+        <a href="#">Home</a>
+        <a href="#">Settings</a>
+      </nav> -->
+    </footer>
+    <script src="base.js"></script>
+  </div>
+</body>
+</html>
